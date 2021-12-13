@@ -9,7 +9,13 @@ public class OutputMaker {
         System.out.println("1. BubbleSort");
     }
 
-    public static void displayArray(int[] arrToDisplay){
+    public static void displayRandomArray(int[] arrToDisplay){
+        System.out.println("This is your random Array:");
+        System.out.println(Arrays.toString(arrToDisplay));
+    }
+
+    public static void displaySortedArray(int[] arrToDisplay){
+        System.out.println("This is your sorted Array:");
         System.out.println(Arrays.toString(arrToDisplay));
     }
 
