@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class OutputMaker {
 
-    public void displayMenu(){
+    public static void displayMenu(){
         System.out.println("Please choose a sorting method:");
         System.out.println("1. BubbleSort");
     }
 
-    public void displayArray(int[] arrToDisplay){
+    public static void displayArray(int[] arrToDisplay){
         System.out.println(Arrays.toString(arrToDisplay));
     }
 }
