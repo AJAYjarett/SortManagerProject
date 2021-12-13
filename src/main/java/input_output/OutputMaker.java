@@ -12,4 +12,8 @@ public class OutputMaker {
     public static void displayArray(int[] arrToDisplay){
         System.out.println(Arrays.toString(arrToDisplay));
     }
+
+    public static void displayUpperBoundIn(){
+        System.out.println("Please input the length of your random array:");
+    }
 }
