@@ -5,6 +5,7 @@ import input_output.OutputMaker;
 import random_array.RandomArray;
 import sorters.Sorter;
 import sorters.SorterFactory;
+import sorters.SorterRunning;
 
 public class RuntimeController {
 
@@ -16,7 +17,7 @@ public class RuntimeController {
         OutputMaker.displayUpperBoundIn();
         arrayToSort = RandomArray.getRandomArray(Integer.parseInt(InputReader.getInput()));
         OutputMaker.displayRandomArray(arrayToSort);
-        arraySorted = sorter.sort(arrayToSort);
+        arraySorted = SorterRunning.runSorter(sorter,arrayToSort);
         OutputMaker.displaySortedArray(arraySorted);
     }
 }
