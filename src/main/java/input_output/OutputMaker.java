@@ -7,6 +7,8 @@ public class OutputMaker {
     public static void displayMenu(){
         System.out.println("Please choose a sorting method:");
         System.out.println("1. BubbleSort");
+        System.out.println("2. MergeSort");
+        System.out.println("3. BinaryTreeSorter");
     }
 
     public static void displayRandomArray(int[] arrToDisplay){
