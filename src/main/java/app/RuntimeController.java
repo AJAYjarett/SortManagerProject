@@ -13,7 +13,6 @@ public class RuntimeController {
         boolean continueSorting = true;
         int[] arrayToSort;
         int[] arraySorted;
-        controllerFeatures
         while (continueSorting){
             OutputMaker.displayMenu();
             Sorter sorter = SorterFactory.getSorter(InputReader.getInput());
