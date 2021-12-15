@@ -19,6 +19,11 @@ public class OutputMaker {
         System.out.println(Arrays.toString(arrToDisplay));
     }
 
+    public static void displayTimeTaken(long timeTakenNano){
+        System.out.println("Time taken to sort:");
+        System.out.println(timeTakenNano + " Nanoseconds");
+    }
+
     public static void displayUpperBoundIn(){
         System.out.println("Please input the length of your random array:");
     }
