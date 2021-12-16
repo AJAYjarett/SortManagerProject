@@ -22,8 +22,8 @@ public class BinaryTreeSorterTests {
 
     @Test
     @MethodSource("randomArrays")
-    @DisplayName("Checking BubbleSorter works")
-    void checkingBubbleSorterWorks() {
+    @DisplayName("Checking BinaryTreeSorter works")
+    void checkingBinaryTreeSorterWorks() {
         Assertions.assertArrayEquals(binaryTreeSorter.sort(testingArray), testArray);
     }
 }

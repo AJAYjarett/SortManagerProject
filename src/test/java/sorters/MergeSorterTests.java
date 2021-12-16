@@ -22,8 +22,8 @@ public class MergeSorterTests {
 
     @Test
     @MethodSource("randomArrays")
-    @DisplayName("Checking BubbleSorter works")
-    void checkingBubbleSorterWorks() {
+    @DisplayName("Checking MergeSorter works")
+    void checkingMergeSorterWorks() {
         Assertions.assertArrayEquals(mergeSorter.sort(testingArray), testArray);
     }
 }
