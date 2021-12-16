@@ -1,6 +1,6 @@
-package sorters.binary_tree;
+package sorters;
 
-import sorters.Sorter;
+import sorters.binary_tree.BinaryTree;
 
 import java.util.Arrays;
 
