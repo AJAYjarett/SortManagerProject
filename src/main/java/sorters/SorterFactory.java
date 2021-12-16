@@ -1,7 +1,5 @@
 package sorters;
 
-import sorters.binary_tree.BinaryTreeSorter;
-
 public class SorterFactory {
 
     public static Sorter getSorter(String sorterType){
