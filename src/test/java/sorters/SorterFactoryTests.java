@@ -13,8 +13,9 @@ public class SorterFactoryTests {
 
     public static Stream<Arguments> getSorters(){
         return Stream.of(Arguments.arguments(1, new BubbleSorter()),
-                Arguments.arguments(2, new MergeSorter()),
-                Arguments.arguments(3, new BinaryTreeSorter()));
+                Arguments.arguments(2, new QuickSorter()),
+                Arguments.arguments(3, new BinaryTreeSorter()),
+                Arguments.arguments(4, new MergeSorter()));
     }
 
     @ParameterizedTest
