@@ -1,5 +1,9 @@
 package input_output;
 
+import logger.LogWriter;
+
+import java.util.logging.Level;
+
 public class InputChecker {
 
 
@@ -9,6 +13,7 @@ public class InputChecker {
         int input = inputToCheck;
         while (correctInput == false){
             if (input == -1){
+                LogWriter.writeLog(Level.WARNING, "User input not accepted");
                 OutputMaker.displayWrongInput();
                 if (stage == 1) input = InputReader.getMenuInput();
                 if (stage == 2) input = InputReader.getUpperboundInput();
