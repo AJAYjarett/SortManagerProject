@@ -11,6 +11,7 @@ public class InputChecker {
                 OutputMaker.displayWrongInput();
                 if (stage == 1) input = InputReader.getMenuInput();
                 if (stage == 2) input = InputReader.getUpperboundInput();
+                if (stage == 3) input = InputReader.getContinueInput();
                 continue;
             }
             if (input != -1) correctInput = true;
@@ -28,6 +29,6 @@ public class InputChecker {
     }
 
     public static int checkInputContinue(){
-        return  checkInput(InputReader.getUpperboundInput(), 3);
+        return  checkInput(InputReader.getContinueInput(), 3);
     }
 }

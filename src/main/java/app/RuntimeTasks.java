@@ -34,7 +34,7 @@ public class RuntimeTasks {
 
     public static boolean endOrContinue(){
         OutputMaker.displayEnding();
-        if (InputChecker.checkInputMenu() == 1) return false;
+        if (InputChecker.checkInputContinue() == 1) return false;
         return true;
     }
 }

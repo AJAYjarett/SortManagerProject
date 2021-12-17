@@ -31,6 +31,19 @@ public class InputReader {
         }
     }
 
+    public static int getContinueInput(){
+        String userInput = scanner.nextLine();
+        try{
+            int inputToCheck = Integer.parseInt(userInput);
+            if (inputToCheck == 1 || inputToCheck == 2){
+                return inputToCheck;
+            }
+            return -1;
+        } catch (NumberFormatException e){
+            return -1;
+        }
+    }
+
     public static void closeScanner(){
         scanner.close();
     }

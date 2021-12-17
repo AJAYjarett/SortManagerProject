@@ -36,7 +36,7 @@ public class OutputMaker {
 
     public static void displayEnding(){
         System.out.println("Would you like to continue sorting:");
-        System.out.println("Press Enter to Continue");
         System.out.println("1. End");
+        System.out.println("2. Continue");
     }
 }
