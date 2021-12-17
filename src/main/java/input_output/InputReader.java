@@ -9,7 +9,7 @@ public class InputReader {
         String userInput = scanner.nextLine();
         try{
             int inputToCheck = Integer.parseInt(userInput);
-            if (inputToCheck <= 0 || inputToCheck > 3){
+            if (inputToCheck <= 0 || inputToCheck > 4){
                 return -1;
             }
             return inputToCheck;

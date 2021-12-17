@@ -4,7 +4,7 @@ public class InputChecker {
 
 
     //Checks the input is within the acceptable options and asks for new input if not
-    public static int checkInput(int inputToCheck, int stage){
+    private static int checkInput(int inputToCheck, int stage){
         boolean correctInput = false;
         int input = inputToCheck;
         while (correctInput == false){
