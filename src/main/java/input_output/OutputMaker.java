@@ -11,6 +11,10 @@ public class OutputMaker {
         System.out.println("3. BinaryTreeSorter");
     }
 
+    public static void displayWrongInput(){
+        System.out.println("This input is not accepted, please try again.");
+    }
+
     public static void displayRandomArray(int[] arrToDisplay){
         System.out.println("This is your random Array:");
         System.out.println(Arrays.toString(arrToDisplay));
@@ -32,7 +36,7 @@ public class OutputMaker {
 
     public static void displayEnding(){
         System.out.println("Would you like to continue sorting:");
-        System.out.println("Press Enter to Continue");
         System.out.println("1. End");
+        System.out.println("2. Continue");
     }
 }

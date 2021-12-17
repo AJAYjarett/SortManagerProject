@@ -1,12 +1,14 @@
 package sorters;
 
+import java.util.Objects;
+
 public class SorterFactory {
 
-    public static Sorter getSorter(String sorterType){
-        if (sorterType == null) return null;
-        if (sorterType.equals("1")) return new BubbleSorter();
-        if (sorterType.equals("2")) return new MergeSorter();
-        if (sorterType.equals("3")) return new BinaryTreeSorter();
+    public static Sorter getSorter(int sorterType){
+        if (Objects.isNull(sorterType)) return null;
+        if (sorterType == 1) return new BubbleSorter();
+        if (sorterType == 2) return new MergeSorter();
+        if (sorterType == 3) return new BinaryTreeSorter();
 
         return null;
     }
