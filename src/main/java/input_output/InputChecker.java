@@ -3,6 +3,7 @@ package input_output;
 public class InputChecker {
 
 
+    //Checks the input is within the acceptable options and asks for new input if not
     public static int checkInput(int inputToCheck, int stage){
         boolean correctInput = false;
         int input = inputToCheck;
@@ -22,7 +23,6 @@ public class InputChecker {
     public static int checkInputMenu(){
         return  checkInput(InputReader.getMenuInput(), 1);
     }
-
 
     public static int checkInputUpperbound(){
         return  checkInput(InputReader.getUpperboundInput(), 2);
