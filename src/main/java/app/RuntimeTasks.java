@@ -1,5 +1,6 @@
 package app;
 
+import input_output.InputChecker;
 import input_output.InputReader;
 import input_output.OutputMaker;
 import random_array.RandomArray;
@@ -11,14 +12,14 @@ public class RuntimeTasks {
 
     public static Sorter getSorter(){
         OutputMaker.displayMenu();
-        Sorter sorter = SorterFactory.getSorter(InputReader.getInput());
+        Sorter sorter = SorterFactory.getSorter(InputChecker.checkInputMenu());
         return sorter;
     }
 
     public static int[] getAndShowRandomArray(){
         int[] arrayToSort;
         OutputMaker.displayUpperBoundIn();
-        arrayToSort = RandomArray.getRandomArray(Integer.parseInt(InputReader.getInput()));
+        arrayToSort = RandomArray.getRandomArray(InputChecker.checkInputUpperbound());
         OutputMaker.displayRandomArray(arrayToSort);
         return arrayToSort;
     }
@@ -33,7 +34,7 @@ public class RuntimeTasks {
 
     public static boolean endOrContinue(){
         OutputMaker.displayEnding();
-        if (InputReader.getInput().equals("1")) return false;
+        if (InputChecker.checkInputMenu() == 1) return false;
         return true;
     }
 }

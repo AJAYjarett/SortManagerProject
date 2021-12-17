@@ -12,15 +12,15 @@ public class SorterFactoryTests {
 
 
     public static Stream<Arguments> getSorters(){
-        return Stream.of(Arguments.arguments("1", new BubbleSorter()),
-                Arguments.arguments("2", new MergeSorter()),
-                Arguments.arguments("3", new BinaryTreeSorter()));
+        return Stream.of(Arguments.arguments(1, new BubbleSorter()),
+                Arguments.arguments(2, new MergeSorter()),
+                Arguments.arguments(3, new BinaryTreeSorter()));
     }
 
     @ParameterizedTest
     @MethodSource("getSorters")
     @DisplayName("Checking Sorter Creation")
-    void checkingSorterCreation(String type, Sorter sorter) {
+    void checkingSorterCreation(int type, Sorter sorter) {
         Assertions.assertEquals(SorterFactory.getSorter(type).getClass(), sorter.getClass());
     }
 }
